@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderView" customModule="ClosureExample" customModuleProvider="target">
+            <connections>
+                <outlet property="slider" destination="4UE-LK-jry" id="x2U-hh-Jdi"/>
+                <outletCollection property="starImageViews" destination="D1c-jK-YPa" collectionClass="NSMutableArray" id="FYK-u1-3Eb"/>
+                <outletCollection property="starImageViews" destination="MIZ-ae-jfD" collectionClass="NSMutableArray" id="hA8-Zc-Xdi"/>
+                <outletCollection property="starImageViews" destination="9VK-t3-noZ" collectionClass="NSMutableArray" id="r3B-gB-BlE"/>
+                <outletCollection property="starImageViews" destination="duj-tu-6Ee" collectionClass="NSMutableArray" id="mJ1-B7-3Cq"/>
+                <outletCollection property="starImageViews" destination="3vX-LM-k4h" collectionClass="NSMutableArray" id="5XX-QZ-Msn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-LK-jry">
+                    <rect key="frame" x="18" y="70.333333333333329" width="248" height="58.666666666666671"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <connections>
+                        <action selector="didEndEditing:" destination="-1" eventType="valueChanged" id="XNI-Wn-dRv"/>
+                    </connections>
+                </slider>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F26-yg-hpM">
+                    <rect key="frame" x="20" y="30" width="244" height="20.333333333333329"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D1c-jK-YPa">
+                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="48.666666666666664" height="19.999999999999996"/>
+                            <color key="tintColor" red="0.94509804249999996" green="0.84313726430000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-ae-jfD">
+                            <rect key="frame" x="48.666666666666671" y="-0.33333333333333215" width="49" height="19.999999999999996"/>
+                            <color key="tintColor" red="0.94509804249999996" green="0.84313726430000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9VK-t3-noZ">
+                            <rect key="frame" x="97.666666666666671" y="-0.33333333333333215" width="48.666666666666671" height="19.999999999999996"/>
+                            <color key="tintColor" red="0.94509804249999996" green="0.84313726430000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="duj-tu-6Ee">
+                            <rect key="frame" x="146.33333333333334" y="-0.33333333333333215" width="49" height="19.999999999999996"/>
+                            <color key="tintColor" red="0.94509804249999996" green="0.84313726430000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-LM-k4h">
+                            <rect key="frame" x="195.33333333333334" y="-0.33333333333333215" width="48.666666666666657" height="19.999999999999996"/>
+                            <color key="tintColor" red="0.94509804249999996" green="0.84313726430000002" blue="0.42745098469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4UE-LK-jry" firstAttribute="top" secondItem="F26-yg-hpM" secondAttribute="bottom" constant="20" id="DuA-cR-RYz"/>
+                <constraint firstItem="F26-yg-hpM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="EM4-aM-Ipm"/>
+                <constraint firstItem="4UE-LK-jry" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Fzf-cK-faR"/>
+                <constraint firstAttribute="bottom" secondItem="4UE-LK-jry" secondAttribute="bottom" constant="20" id="MOB-Me-pMx"/>
+                <constraint firstItem="F26-yg-hpM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="PL0-55-BwQ"/>
+                <constraint firstAttribute="trailing" secondItem="4UE-LK-jry" secondAttribute="trailing" constant="20" id="Pdf-5F-iNX"/>
+                <constraint firstAttribute="trailing" secondItem="F26-yg-hpM" secondAttribute="trailing" constant="20" id="gyq-d4-cde"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                    <integer key="value" value="18"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="47.328244274809158" y="-20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
